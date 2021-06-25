@@ -2,39 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be4aa2ce-e21d-4f40-bb24-f878e15e08db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Empty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/IncorrectFileFormatException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/InvalidAutorException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/InvalidCountryException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/InvalidEbookTitleException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/InvalidEmailException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/InvalidFieldNumberException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/InvalidLinkException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/InvalidPasswordException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/InvalidUsernameException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/NullFieldsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ListaServidores.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/TestEbook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/TestEditora.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/TestListaServidores.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/TestServidor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/TestUtilizador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TrabalhoFinalES2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TrabalhoFinalES2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exceptions/InvalidDataLimiteException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exceptions/InvalidDatasException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exceptions/InvalidNomeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exceptions/InvalidProlongacoesException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exceptions/NoTermsServiceAgreement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/EbookInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/EmprestimoInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/ServidorInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/UtilizadorInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stubs/EbookStubs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stubs/EditoraStubs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stubs/EmprestimoStubs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stubs/ServidorStubs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stubs/UtilizadorStubs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/Emprestimo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/Servidor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/Utilizador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/application/TestEbook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/application/TestEmprestimo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/application/TestServidor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/application/TestUtilizador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ebook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Editora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Editora.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Emprestimo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Emprestimo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Localizacao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Servidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Servidor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utilizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/Ebook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Editora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/Editora.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Emprestimo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Empty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/Empty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListaServidores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/ListaServidores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servidor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utilizador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestEbook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestEditora.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/application/TestEditora.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestListaServidores.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/application/TestListaServidores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestServidor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestUtilizador.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="CoverageOptionsProvider">
     <option name="myAddOrReplace" value="1" />
@@ -42,12 +52,27 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="os9xsu8b" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1sqEkVoAxMn8WR6aI7YFL0lsRK0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -81,10 +106,13 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.28460342" />
-    <property name="settings.editor.selected.configurable" value="discord-application" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="interfaces" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -92,21 +120,55 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestUtilizador">
+  <component name="RunManager" selected="JUnit.Todos">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="types.Main" />
       <module name="TrabalhoFinalES2" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUtilizador.testAutenticarUtilizador" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrabalhoFinalES2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="application" />
+      <option name="MAIN_CLASS_NAME" value="application.TestUtilizador" />
+      <option name="METHOD_NAME" value="testAutenticarUtilizador" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUtilizador.testCriarUtilizador" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrabalhoFinalES2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="application" />
+      <option name="MAIN_CLASS_NAME" value="application.TestUtilizador" />
+      <option name="METHOD_NAME" value="testCriarUtilizador" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,11 +177,20 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.TestEbook" />
       <item itemvalue="JUnit.TestEditora" />
+      <item itemvalue="JUnit.TestEmprestimo" />
       <item itemvalue="JUnit.TestListaServidores" />
       <item itemvalue="JUnit.TestServidor" />
       <item itemvalue="JUnit.TestUtilizador" />
       <item itemvalue="JUnit.Todos" />
+      <item itemvalue="JUnit.TestUtilizador.testAutenticarUtilizador" />
+      <item itemvalue="JUnit.TestUtilizador.testCriarUtilizador" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestUtilizador.testCriarUtilizador" />
+        <item itemvalue="JUnit.TestUtilizador.testAutenticarUtilizador" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -140,6 +211,17 @@
       <workItem from="1622189589460" duration="7287000" />
       <workItem from="1622709558515" duration="229000" />
       <workItem from="1622709814620" duration="7661000" />
+      <workItem from="1622794763742" duration="1974000" />
+      <workItem from="1622798189833" duration="7162000" />
+      <workItem from="1623325084501" duration="220000" />
+      <workItem from="1623325324863" duration="1961000" />
+      <workItem from="1623327333869" duration="338000" />
+      <workItem from="1623327697303" duration="832000" />
+      <workItem from="1623937886494" duration="25000" />
+      <workItem from="1623937933766" duration="23687000" />
+      <workItem from="1624608310079" duration="949000" />
+      <workItem from="1624609294452" duration="12327000" />
+      <workItem from="1624622814895" duration="13172000" />
     </task>
     <servers />
   </component>
@@ -164,12 +246,35 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
   </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="servidor" language="JAVA" />
+        <watch expression="((HashMap.Node)servidor.editoras_livros.entrySet().toArray()[0]).getKey()" custom="java.util.HashMap.Node" />
+        <watch expression="ebooks.get(0)" />
+        <watch expression="ebooks.get(0)" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TrabalhoFinalES2$TestListaServidores.ic" NAME="TestListaServidores Coverage Results" MODIFIED="1621619857682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/TrabalhoFinalES2$TestUtilizador.ic" NAME="TestUtilizador Coverage Results" MODIFIED="1621615466721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/TrabalhoFinalES2$TestEditora.ic" NAME="TestEditora Coverage Results" MODIFIED="1621614056220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/TrabalhoFinalES2$TestEbook.ic" NAME="TestEbook Coverage Results" MODIFIED="1621613588087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/TrabalhoFinalES2$TestServidor.ic" NAME="TestServidor Coverage Results" MODIFIED="1621617577405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/TrabalhoFinalES2$Todos.ic" NAME="Todos Coverage Results" MODIFIED="1621629292482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TrabalhoFinalES2$TestEmprestimo_testEmprestimoIgualdade.ic" NAME="TestEmprestimo.testEmprestimoIgualdade Coverage Results" MODIFIED="1624620878761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>application.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TrabalhoFinalES2$TestServidor_testLerServidorValid.ic" NAME="TestServidor.testLerServidorValid Coverage Results" MODIFIED="1624631608951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>application.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TrabalhoFinalES2$TestEmprestimo_testEmprestimoServidor.ic" NAME="TestEmprestimo.testEmprestimoServidor Coverage Results" MODIFIED="1624619758554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>application.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TrabalhoFinalES2$TestUtilizador.ic" NAME="TestUtilizador Coverage Results" MODIFIED="1623949565473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TrabalhoFinalES2$TestEmprestimo.ic" NAME="TestEmprestimo Coverage Results" MODIFIED="1624620601729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TrabalhoFinalES2$TestEditora.ic" NAME="TestEditora Coverage Results" MODIFIED="1624635060427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TrabalhoFinalES2$TestEbook.ic" NAME="TestEbook Coverage Results" MODIFIED="1623949997072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TrabalhoFinalES2$TestEmprestimo_testEmprestimoProlongacoes.ic" NAME="TestEmprestimo.testEmprestimoProlongacoes Coverage Results" MODIFIED="1624621322790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>application.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TrabalhoFinalES2$TestServidor.ic" NAME="TestServidor Coverage Results" MODIFIED="1624622069957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TrabalhoFinalES2$Todos.ic" NAME="Todos Coverage Results" MODIFIED="1624632849128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
