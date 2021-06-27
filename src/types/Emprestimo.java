@@ -1,12 +1,10 @@
 package types;
 
-import Exceptions.InvalidDatasException;
-import Exceptions.InvalidProlongacoesException;
-import Exceptions.NoTermsServiceAgreement;
-import Exceptions.NullFieldsException;
+import Exceptions.*;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 
 import java.util.GregorianCalendar;
+import java.util.HashMap;
 
 public class Emprestimo {
     private static final Integer limite_prolongacoes = 2;
@@ -16,7 +14,7 @@ public class Emprestimo {
     private GregorianCalendar data_emprestimo;
     private GregorianCalendar data_limite;
     private Integer prolongacoes;
-    private boolean concordar_termos_servico;
+    private HashMap<Integer, GregorianCalendar> prolongacoesArray;
 
     public Emprestimo() { }
 
@@ -27,6 +25,9 @@ public class Emprestimo {
         if (data_emprestimo.after(data_limite) || data_limite.before(data_emprestimo)) {
             throw new InvalidDatasException();
         }
+        if (!utilizador.getStatus()) {
+            throw new UserAccountStatusDisabled();
+        }
         if (!concordar_termos_servico) {
             throw new NoTermsServiceAgreement();
         }
@@ -36,7 +37,7 @@ public class Emprestimo {
         this.data_emprestimo = data_emprestimo;
         this.data_limite = data_limite;
         this.prolongacoes = 0;
-        this.concordar_termos_servico = true;
+        this.prolongacoesArray = new HashMap<>();
     }
 
     public Servidor getServidor() {
@@ -104,11 +105,27 @@ public class Emprestimo {
         return prolongacoes;
     }
 
-    public void incrementProlongacoes() throws Exception {
-        if (this.prolongacoes++ > limite_prolongacoes) {
+    public void incrementProlongacoes(GregorianCalendar data_limite_nova) throws Exception {
+        if (data_limite_nova == null) {
+            throw new NullFieldsException();
+        }
+        if (this.prolongacoes + 1 > limite_prolongacoes) {
             throw new InvalidProlongacoesException();
         }
+        if (
+                this.data_limite.before(this.data_emprestimo) ||
+                data_limite_nova.before(this.data_limite) ||
+                data_limite_nova.equals(this.data_limite)
+        ) {
+            throw new InvalidDatasException();
+        }
         this.prolongacoes++;
+        this.data_limite = data_limite_nova;
+        prolongacoesArray.put(prolongacoes, data_limite_nova);
+    }
+
+    public HashMap<Integer, GregorianCalendar> getProlongacoesArray() {
+        return prolongacoesArray;
     }
 
     @Override

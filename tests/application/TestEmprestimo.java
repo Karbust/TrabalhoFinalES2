@@ -1,9 +1,6 @@
 package application;
 
-import Exceptions.InvalidDatasException;
-import Exceptions.InvalidProlongacoesException;
-import Exceptions.NoTermsServiceAgreement;
-import Exceptions.NullFieldsException;
+import Exceptions.*;
 import org.junit.jupiter.api.*;
 import stubs.EbookStubs;
 import stubs.EmprestimoStubs;
@@ -79,7 +76,7 @@ public class TestEmprestimo {
     }
 
     @Test
-    public void testEmprestimoObjectCreationExceptions() {
+    public void testEmprestimoObjectCreationExceptions() throws Exception {
         assertThrows(
                 NullFieldsException.class,
                 () -> new Emprestimo(
@@ -113,6 +110,29 @@ public class TestEmprestimo {
                         new GregorianCalendar(2021, Calendar.JUNE, 24),
                         new GregorianCalendar(2021, Calendar.JUNE, 25),
                         false
+                )
+        );
+
+        Utilizador utilizador1 = new Utilizador(
+                "António",
+                "PT",
+                "antonio@teste.pt",
+                "karbust",
+                "testerino2",
+                true
+        );
+
+        utilizador1.setStatus(false);
+
+        assertThrows(
+                UserAccountStatusDisabled.class,
+                () -> new Emprestimo(
+                        servidor,
+                        utilizador1,
+                        ebook,
+                        new GregorianCalendar(2021, Calendar.JUNE, 24),
+                        new GregorianCalendar(2021, Calendar.JUNE, 25),
+                        true
                 )
         );
     }
@@ -237,13 +257,33 @@ public class TestEmprestimo {
     public void testEmprestimoProlongacoes() throws Exception {
         assertEquals(emprestimo.getProlongacoes(), 0);
 
-        emprestimo.incrementProlongacoes();
-        emprestimo.incrementProlongacoes();
+        assertThrows(
+                NullFieldsException.class,
+                () -> emprestimo.incrementProlongacoes(null)
+        );
+
+        assertThrows(
+                InvalidDatasException.class,
+                () -> emprestimo.incrementProlongacoes(new GregorianCalendar(2021, Calendar.JUNE, 25))
+        );
+
+        GregorianCalendar prolongacao1 = new GregorianCalendar(2021, Calendar.JUNE, 26);
+        GregorianCalendar prolongacao2 = new GregorianCalendar(2021, Calendar.JUNE, 27);
+
+        emprestimo.incrementProlongacoes(prolongacao1);
+        emprestimo.incrementProlongacoes(prolongacao2);
 
         assertThrows(
                 InvalidProlongacoesException.class,
-                () -> emprestimo.incrementProlongacoes()
+                () -> emprestimo.incrementProlongacoes(new GregorianCalendar(2021, Calendar.JUNE, 28))
         );
+
+        HashMap<Integer, GregorianCalendar> prolongacoes = emprestimo.getProlongacoesArray();
+
+        assertNull(prolongacoes.get(0));
+        assertEquals(prolongacoes.get(1), prolongacao1);
+        assertEquals(prolongacoes.get(2), prolongacao2);
+        assertNull(prolongacoes.get(3));
     }
 
     @Test

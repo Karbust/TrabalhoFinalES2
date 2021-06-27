@@ -402,4 +402,17 @@ public class TestUtilizador {
         assertFalse(UtilizadorStubs.getInstance().apagarUtilizador(null));
         assertFalse(UtilizadorStubs.getInstance().apagarUtilizador(-1));
     }
+
+    @Test
+    @Order(7)
+    public void testEditarStatusUtilizador() throws Exception {
+        assertTrue(UtilizadorStubs.getInstance().editarStatusUtilizador(1, false));
+        assertFalse(UtilizadorStubs.getInstance().lerUtilizador(1).getStatus());
+
+        assertTrue(UtilizadorStubs.getInstance().editarStatusUtilizador(1, true));
+        assertTrue(UtilizadorStubs.getInstance().lerUtilizador(1).getStatus());
+
+        assertFalse(UtilizadorStubs.getInstance().editarStatusUtilizador(null, false));
+        assertFalse(UtilizadorStubs.getInstance().editarStatusUtilizador(-1, false));
+    }
 }

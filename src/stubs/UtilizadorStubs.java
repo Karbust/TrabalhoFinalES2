@@ -130,4 +130,12 @@ public class UtilizadorStubs {
         }
         return false;
     }
+
+    public boolean editarStatusUtilizador(Integer id, boolean status) {
+        if (id != null && id > 0 && id <= utilizadores.size()) {
+            utilizadores.get(id - 1).setStatus(status);
+            return true;
+        }
+        return false;
+    }
 }
