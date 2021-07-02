@@ -139,7 +139,10 @@ class TestEditora {
     @Test
     @Order(3)
     public void testCriarEditora() throws Exception {
-        assertTrue(EditoraStubs.getInstance().registarEditora(editora));
+        Editora editoraNew = new Editora("O'Reilly 1", "CA", "Termos Teste");
+
+        assertTrue(EditoraStubs.getInstance().registarEditora(editoraNew));
+        assertFalse(EditoraStubs.getInstance().registarEditora(editora));
         assertFalse(EditoraStubs.getInstance().registarEditora(null));
     }
 

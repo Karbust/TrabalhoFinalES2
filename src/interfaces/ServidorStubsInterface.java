@@ -4,7 +4,7 @@ import types.Servidor;
 
 import java.util.ArrayList;
 
-public interface ServidorInterface {
+public interface ServidorStubsInterface {
     ArrayList<Servidor> lerServidores();
 
     Servidor lerServidor(Integer id);
@@ -13,5 +13,5 @@ public interface ServidorInterface {
 
     boolean atualizarServidor(Integer id, Servidor servidor);
 
-    boolean apagarEbook(Integer id);
+    boolean apagarServidor(Integer id);
 }

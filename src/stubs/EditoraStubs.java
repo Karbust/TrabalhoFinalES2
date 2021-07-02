@@ -1,10 +1,11 @@
 package stubs;
 
+import interfaces.EditoraStubsInterface;
 import types.Editora;
 
 import java.util.ArrayList;
 
-public class EditoraStubs {
+public class EditoraStubs implements EditoraStubsInterface {
     private static EditoraStubs instance;
     ArrayList<Editora> editoras = new ArrayList<>();
 
@@ -40,6 +41,9 @@ public class EditoraStubs {
 
     public boolean registarEditora(Editora editora) {
         if (editora != null) {
+            if (editoras.contains(editora)) {
+                return false;
+            }
             return editoras.add(editora);
         }
         return false;

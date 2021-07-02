@@ -1,9 +1,11 @@
 package types;
 
 import Exceptions.*;
+import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.validator.routines.UrlValidator;
 
+import java.net.URL;
 import java.util.Objects;
 
 public class Ebook {
@@ -42,6 +44,12 @@ public class Ebook {
 
         if (autor.length() < 2 || autor.length() > 70) {
             throw new InvalidAutorException();
+        }
+
+        URL url = new URL(link);
+
+        if(!FilenameUtils.getExtension(url.getPath()).equals("pdf") && !FilenameUtils.getExtension(url.getPath()).equals("epub")) {
+            throw new InvalidFileFormatException();
         }
 
         this.hash = hash;

@@ -1,6 +1,6 @@
 package types;
 
-import Exceptions.IncorrectFileFormatException;
+import Exceptions.InvalidFileFormatException;
 import org.apache.commons.io.FilenameUtils;
 
 import java.io.IOException;
@@ -10,13 +10,13 @@ import java.net.URL;
 import java.net.URLConnection;
 
 public class Main {
-    public static void main(String[] args) throws MalformedURLException, IncorrectFileFormatException {
+    public static void main(String[] args) throws MalformedURLException, InvalidFileFormatException {
         URL url = new URL("https://ebooks.karbust.me/Technology/AW.Framework.Design.Guidelines.2nd.Edition.pdf");
 
         System.out.println(getFileSize(url));
 
         if(!FilenameUtils.getExtension(url.getPath()).equals("pdf") && !FilenameUtils.getExtension(url.getPath()).equals("epub")) {
-            throw new IncorrectFileFormatException();
+            throw new InvalidFileFormatException();
         }
     }
 

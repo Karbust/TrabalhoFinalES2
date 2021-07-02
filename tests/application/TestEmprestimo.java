@@ -308,7 +308,16 @@ public class TestEmprestimo {
     @Test
     @Order(3)
     public void testCriarEmprestimo() throws Exception {
-        assertTrue(EmprestimoStubs.getInstance().registarEmprestimo(emprestimo));
+        Emprestimo emprestimoNew = new Emprestimo(
+                servidor,
+                utilizador,
+                ebook,
+                new GregorianCalendar(2021, Calendar.JUNE, 25),
+                new GregorianCalendar(2021, Calendar.JUNE, 26),
+                true
+        );
+        assertTrue(EmprestimoStubs.getInstance().registarEmprestimo(emprestimoNew));
+        assertFalse(EmprestimoStubs.getInstance().registarEmprestimo(emprestimo));
         assertFalse(EmprestimoStubs.getInstance().registarEmprestimo(null));
     }
 

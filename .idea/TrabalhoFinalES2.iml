@@ -55,5 +55,6 @@
         <jarDirectory url="file://$MODULE_DIR$/../commons-validator-1.7" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="commons-lang3-3.12" level="project" />
   </component>
 </module>

@@ -1,13 +1,14 @@
 package stubs;
 
 import Exceptions.*;
+import interfaces.UtilizadorStubsInterface;
 import types.Utilizador;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Locale;
 
-public class UtilizadorStubs {
+public class UtilizadorStubs implements UtilizadorStubsInterface {
     private static UtilizadorStubs instance;
     ArrayList<Utilizador> utilizadores = new ArrayList<>();
 
@@ -112,7 +113,13 @@ public class UtilizadorStubs {
             throw new InvalidCountryException();
         }
 
-        return utilizadores.add(new Utilizador(nome, pais, email, nome_utilizador, password, status));
+        Utilizador newUser = new Utilizador(nome, pais, email, nome_utilizador, password, status);
+
+        if (utilizadores.contains(newUser)) {
+            return false;
+        }
+
+        return utilizadores.add(newUser);
     }
 
     public boolean atualizarUtilizador(Integer id, Utilizador utilizador) {

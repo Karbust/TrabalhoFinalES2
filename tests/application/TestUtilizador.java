@@ -262,6 +262,15 @@ public class TestUtilizador {
     @Order(4)
     public void testCriarUtilizador() throws Exception {
         assertTrue(UtilizadorStubs.getInstance().registarUtilizador(
+                "Adriano1",
+                "PT",
+                "adriano@teste.pt",
+                "notoriousadri",
+                "testerino1",
+                true
+        ));
+
+        assertFalse(UtilizadorStubs.getInstance().registarUtilizador(
                 "Adriano",
                 "PT",
                 "adriano@teste.pt",
@@ -269,6 +278,7 @@ public class TestUtilizador {
                 "testerino1",
                 true
         ));
+
         assertThrows(
                 NullFieldsException.class,
                 () -> UtilizadorStubs.getInstance().registarUtilizador(
@@ -280,6 +290,7 @@ public class TestUtilizador {
                         false
                 )
         );
+
         assertThrows(
                 NullFieldsException.class,
                 () -> UtilizadorStubs.getInstance().registarUtilizador(
@@ -294,7 +305,7 @@ public class TestUtilizador {
 
         assertThrows(
                 InvalidEmailException.class,
-                () -> new Utilizador(
+                () -> UtilizadorStubs.getInstance().registarUtilizador(
                         "António",
                         "PT",
                         "teste@teste.p",
@@ -306,7 +317,7 @@ public class TestUtilizador {
 
         assertThrows(
                 InvalidPasswordException.class,
-                () -> new Utilizador(
+                () -> UtilizadorStubs.getInstance().registarUtilizador(
                         "António",
                         "PT",
                         "teste@teste.pt",
@@ -318,7 +329,7 @@ public class TestUtilizador {
 
         assertThrows(
                 InvalidUsernameException.class,
-                () -> new Utilizador(
+                () -> UtilizadorStubs.getInstance().registarUtilizador(
                         "aXKBD438JNHpGrYx",
                         "PT",
                         "teste@teste.pt",
@@ -330,7 +341,7 @@ public class TestUtilizador {
 
         assertThrows(
                 InvalidUsernameException.class,
-                () -> new Utilizador(
+                () -> UtilizadorStubs.getInstance().registarUtilizador(
                         "António",
                         "PT",
                         "teste@teste.pt",
@@ -342,7 +353,7 @@ public class TestUtilizador {
 
         assertThrows(
                 InvalidUsernameException.class,
-                () -> new Utilizador(
+                () -> UtilizadorStubs.getInstance().registarUtilizador(
                         "António",
                         "PT",
                         "teste@teste.pt",
@@ -354,7 +365,7 @@ public class TestUtilizador {
 
         assertThrows(
                 InvalidCountryException.class,
-                () -> new Utilizador(
+                () -> UtilizadorStubs.getInstance().registarUtilizador(
                         "António",
                         "Portugal",
                         "teste@teste.pt",

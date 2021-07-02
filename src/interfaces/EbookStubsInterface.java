@@ -4,7 +4,7 @@ import types.Ebook;
 
 import java.util.ArrayList;
 
-public interface EbookInterface {
+public interface EbookStubsInterface {
     ArrayList<Ebook> lerEbooks();
 
     Ebook lerEbook(Integer id);

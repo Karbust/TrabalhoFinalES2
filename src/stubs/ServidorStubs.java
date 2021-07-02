@@ -1,5 +1,6 @@
 package stubs;
 
+import interfaces.ServidorStubsInterface;
 import types.Ebook;
 import types.Editora;
 import types.Servidor;
@@ -8,7 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class ServidorStubs {
+public class ServidorStubs implements ServidorStubsInterface {
     private static ServidorStubs instance;
     ArrayList<Servidor> servidores = new ArrayList<>();
 
@@ -80,6 +81,9 @@ public class ServidorStubs {
 
     public boolean registarServidor(Servidor servidor) {
         if (servidor != null) {
+            if (servidores.contains(servidor)) {
+                return false;
+            }
             return servidores.add(servidor);
         }
         return false;

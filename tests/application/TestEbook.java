@@ -46,6 +46,18 @@ class TestEbook {
                 2019,
                 410
         );
+
+        new Ebook(
+                "6fecd6b78613f44394071bb81286f83fd355330d3dd755263760d265dc4404cd",
+                33886081,
+                "https://ebooks.karbust.me/Technology/Dive Into Design Patterns (2019) - Alexander Shvets.epub",
+                "Dive Into Design Patterns",
+                "Alexander Shvets",
+                null,
+                1,
+                2019,
+                410
+        );
     }
 
     @Test
@@ -178,6 +190,21 @@ class TestEbook {
                         "https://ebooks.karbust.me/Technology/Dive Into Design Patterns (2019) - Alexander Shvets.pdf",
                         "Dive Into Design Patterns",
                         "RCaw9SsFp7cG3U8HKr4NxdXfmB2kuZnjPYQMAe5vtygDWzTLE6hNQYFu4SJLADCgHydsrm6pEaGkP27xVRew5BbUvz8Wn3MqfKjTa",
+                        null,
+                        1,
+                        2019,
+                        410
+                )
+        );
+
+        assertThrows(
+                InvalidFileFormatException.class,
+                () -> new Ebook(
+                        "6fecd6b78613f44394071bb81286f83fd355330d3dd755263760d265dc4404cd",
+                        33886081,
+                        "https://ebooks.karbust.me/Technology/Dive Into Design Patterns (2019) - Alexander Shvets.pd",
+                        "Dive Into Design Patterns",
+                        "Alexander Shvets",
                         null,
                         1,
                         2019,
@@ -326,6 +353,23 @@ class TestEbook {
     @Order(3)
     public void testCriarEbook() throws Exception {
         assertTrue(EbookStubs.getInstance().registarEbook(new Ebook(
+                "4a97711f4533c45bd25c37a21de3d2f6e7dfcf11f801ebd78ef693f4d2bde4841",
+                49899830,
+                "https://ebooks.karbust.me/Technology/Head First Design Patterns - Building Extensible and Maintainable Object-Oriented Software - Eric Freeman, Elisabeth Robson - O'Reilly Media (2020).pdf",
+                "Head First Design Patterns - Building Extensible and Maintainable Object-Oriented Software",
+                "Eric Freeman & Elisabeth Robson",
+                new Editora(
+                        "O'Reilly",
+                        "CA",
+                        "Termos Teste"
+                ),
+                2,
+                2020,
+                672
+
+        )));
+
+        assertFalse(EbookStubs.getInstance().registarEbook(new Ebook(
                 "4a97711f4533c45bd25c37a21de3d2f6e7dfcf11f801ebd78ef693f4d2bde484",
                 49899830,
                 "https://ebooks.karbust.me/Technology/Head First Design Patterns - Building Extensible and Maintainable Object-Oriented Software - Eric Freeman, Elisabeth Robson - O'Reilly Media (2020).pdf",

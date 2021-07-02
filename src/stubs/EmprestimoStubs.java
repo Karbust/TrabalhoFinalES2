@@ -1,10 +1,11 @@
 package stubs;
 
+import interfaces.EmprestimoStubsInterface;
 import types.*;
 
 import java.util.*;
 
-public class EmprestimoStubs {
+public class EmprestimoStubs implements EmprestimoStubsInterface {
     private static EmprestimoStubs instance;
     ArrayList<Emprestimo> emprestimos = new ArrayList<>();
 
@@ -102,6 +103,9 @@ public class EmprestimoStubs {
 
     public boolean registarEmprestimo(Emprestimo emprestimo) {
         if (emprestimo != null) {
+            if (emprestimos.contains(emprestimo)) {
+                return false;
+            }
             return emprestimos.add(emprestimo);
         }
         return false;

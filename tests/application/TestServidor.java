@@ -238,7 +238,12 @@ class TestServidor {
     @Test
     @Order(3)
     public void testCriarServidorValid() throws Exception {
-        assertTrue(ServidorStubs.getInstance().registarServidor(servidor));
+        Servidor servidorNew = new Servidor(
+                "FR",
+                editoras_livros
+        );
+        assertTrue(ServidorStubs.getInstance().registarServidor(servidorNew));
+        assertFalse(ServidorStubs.getInstance().registarServidor(servidor));
         assertFalse(ServidorStubs.getInstance().registarServidor(null));
     }
 

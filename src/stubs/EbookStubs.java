@@ -1,11 +1,12 @@
 package stubs;
 
+import interfaces.EbookStubsInterface;
 import types.Ebook;
 import types.Editora;
 
 import java.util.ArrayList;
 
-public class EbookStubs {
+public class EbookStubs implements EbookStubsInterface {
     private static EbookStubs instance;
     ArrayList<Ebook> ebooks = new ArrayList<>();
 
@@ -66,6 +67,9 @@ public class EbookStubs {
 
     public boolean registarEbook(Ebook ebook) {
         if (ebook != null) {
+            if (ebooks.contains(ebook)) {
+                return false;
+            }
             return ebooks.add(ebook);
         }
         return false;

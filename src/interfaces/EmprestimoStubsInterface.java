@@ -4,7 +4,7 @@ import types.Emprestimo;
 
 import java.util.ArrayList;
 
-public interface EmprestimoInterface {
+public interface EmprestimoStubsInterface {
     ArrayList<Emprestimo> lerEmprestimos();
 
     Emprestimo lerEmprestimo(Integer id);
