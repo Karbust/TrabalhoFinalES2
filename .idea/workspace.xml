@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be4aa2ce-e21d-4f40-bb24-f878e15e08db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/interfaces/EditoraStubsInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TrabalhoFinalES2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TrabalhoFinalES2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exceptions/IncorrectFileFormatException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/InvalidFileFormatException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/EbookInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/EbookStubsInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/EmprestimoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/EmprestimoStubsInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/ServidorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/ServidorStubsInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/UtilizadorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/UtilizadorStubsInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stubs/EbookStubs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/EbookStubs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stubs/EditoraStubs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/EditoraStubs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stubs/EmprestimoStubs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/EmprestimoStubs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stubs/ServidorStubs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/ServidorStubs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stubs/UtilizadorStubs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/UtilizadorStubs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/Ebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/Ebook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/application/TestEbook.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/application/TestEbook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/application/TestEditora.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/application/TestEditora.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/application/TestEmprestimo.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/application/TestEmprestimo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/application/TestServidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/application/TestServidor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/application/TestUtilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/application/TestUtilizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +209,7 @@
       <workItem from="1624622814895" duration="13172000" />
       <workItem from="1624808104762" duration="4246000" />
       <workItem from="1624971955797" duration="2420000" />
-      <workItem from="1625238036555" duration="4183000" />
+      <workItem from="1625238036555" duration="4577000" />
     </task>
     <servers />
   </component>
@@ -281,6 +263,6 @@
       <FILTER>application.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/TrabalhoFinalES2$TestServidor.ic" NAME="TestServidor Coverage Results" MODIFIED="1624622069957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/TrabalhoFinalES2$Todos.ic" NAME="Todos Coverage Results" MODIFIED="1625249702311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TrabalhoFinalES2$Todos.ic" NAME="Todos Coverage Results" MODIFIED="1625249836263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
