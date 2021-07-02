@@ -1,6 +1,7 @@
 package application;
 
 import Exceptions.InvalidCountryException;
+import Exceptions.InvalidNomeException;
 import Exceptions.NullFieldsException;
 import org.junit.jupiter.api.*;
 import stubs.EditoraStubs;
@@ -50,6 +51,24 @@ class TestEditora {
                 InvalidCountryException.class,
                 () -> new Editora(
                         "Teste",
+                        "Portugal",
+                        "Teste"
+                )
+        );
+
+        assertThrows(
+                InvalidNomeException.class,
+                () -> new Editora(
+                        "12",
+                        "Portugal",
+                        "Teste"
+                )
+        );
+
+        assertThrows(
+                InvalidNomeException.class,
+                () -> new Editora(
+                        "12345678901234567890123456",
                         "Portugal",
                         "Teste"
                 )

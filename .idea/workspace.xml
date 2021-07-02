@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="be4aa2ce-e21d-4f40-bb24-f878e15e08db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/Editora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/Editora.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/application/TestEditora.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/application/TestEditora.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,71 +96,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestEbook.testCriarEbook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TrabalhoFinalES2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="application.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="application" />
-      <option name="MAIN_CLASS_NAME" value="application.TestEbook" />
-      <option name="METHOD_NAME" value="testCriarEbook" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestEmprestimo.testEmprestimoProlongacoes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TrabalhoFinalES2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="application.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="application" />
-      <option name="MAIN_CLASS_NAME" value="application.TestEmprestimo" />
-      <option name="METHOD_NAME" value="testEmprestimoProlongacoes" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestUtilizador.testEditarStatusUtilizador" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TrabalhoFinalES2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="application.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="application" />
-      <option name="MAIN_CLASS_NAME" value="application.TestUtilizador" />
-      <option name="METHOD_NAME" value="testEditarStatusUtilizador" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.TestEmprestimo.testEmprestimoProlongacoes" />
-      <item itemvalue="JUnit.TestUtilizador.testEditarStatusUtilizador" />
       <item itemvalue="JUnit.TestEbook" />
       <item itemvalue="JUnit.TestEditora" />
       <item itemvalue="JUnit.TestEmprestimo" />
@@ -167,15 +116,7 @@
       <item itemvalue="JUnit.TestServidor" />
       <item itemvalue="JUnit.TestUtilizador" />
       <item itemvalue="JUnit.Todos" />
-      <item itemvalue="JUnit.TestEbook.testCriarEbook" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.TestEbook.testCriarEbook" />
-        <item itemvalue="JUnit.TestUtilizador.testEditarStatusUtilizador" />
-        <item itemvalue="JUnit.TestEmprestimo.testEmprestimoProlongacoes" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -209,7 +150,8 @@
       <workItem from="1624622814895" duration="13172000" />
       <workItem from="1624808104762" duration="4246000" />
       <workItem from="1624971955797" duration="2420000" />
-      <workItem from="1625238036555" duration="4577000" />
+      <workItem from="1625238036555" duration="4673000" />
+      <workItem from="1625264829351" duration="608000" />
     </task>
     <servers />
   </component>
@@ -263,6 +205,6 @@
       <FILTER>application.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/TrabalhoFinalES2$TestServidor.ic" NAME="TestServidor Coverage Results" MODIFIED="1624622069957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/TrabalhoFinalES2$Todos.ic" NAME="Todos Coverage Results" MODIFIED="1625249836263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TrabalhoFinalES2$Todos.ic" NAME="Todos Coverage Results" MODIFIED="1625265397858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

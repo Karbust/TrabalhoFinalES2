@@ -1,6 +1,7 @@
 package types;
 
 import Exceptions.InvalidCountryException;
+import Exceptions.InvalidNomeException;
 import Exceptions.NullFieldsException;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 
@@ -21,6 +22,9 @@ public class Editora {
         }
         if (nome.length() == 0 || pais.length() == 0 || termos_responsabilidade.length() == 0) {
             throw new NullFieldsException();
+        }
+        if(nome.length() < 3 || nome.length() > 25) {
+            throw new InvalidNomeException();
         }
         if (!Arrays.toString(Locale.getISOCountries()).contains(pais)) {
             throw new InvalidCountryException();
